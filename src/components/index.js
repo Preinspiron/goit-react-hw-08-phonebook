@@ -1,0 +1,11 @@
+export { App } from './App/App';
+export { default } from './Shared/Shared';
+export { default as Public } from './Routes/Public';
+export { default as Private } from './Routes/Private';
+export { default as Login } from './Contacts/Login';
+export { default as Form } from './Contacts/Form';
+export { default as Filter } from './Contacts/Filter';
+export { default as List } from './Contacts/List';
+export { default as Register } from './Contacts/Register';
+export { default as Shared } from './Shared/Shared';
+// export { default as Contacts } from './Contacts/';
