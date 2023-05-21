@@ -21,11 +21,11 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="header-nav">
-        <NavLink to="/">
+        <NavLink className="header-nav" to="/">
           <HomeIcon sx={{ color: 'rgb(25,118,210)' }} fontSize="large" />
         </NavLink>
         {isLogin && (
-          <NavLink to="/contacts">
+          <NavLink className="header-nav" to="/contacts">
             <MdOutlineImportContacts size={'34'} color="#1976d2" />
           </NavLink>
         )}

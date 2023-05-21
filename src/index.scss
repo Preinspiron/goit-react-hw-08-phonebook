@@ -88,3 +88,16 @@ span {
   display: flex;
   gap: 30px;
 }
+
+.auth-nav {
+  text-decoration: none;
+}
+
+.auth-nav.active button {
+  color: red;
+  text-decoration: solid;
+}
+
+.header-nav.active svg {
+  border-bottom: 1px solid red;
+}
