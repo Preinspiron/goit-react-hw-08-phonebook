@@ -2,20 +2,20 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 // import { Container } from './App.styled.js';
-import { fetchContacts, addContact, deleteContact } from 'redux/operations';
+// import { fetchContacts, addContact, deleteContact } from 'redux/operations';
 
 // import Phonebook, { Filter, Contacts } from '../Phonebook';
 // import { INIT } from '../Phonebook/index';
-import { selectContacts, selectFilter } from '../../redux/selectors.js';
+// import { selectContacts, selectFilter } from '../../redux/selectors.js';
 // import { addCon, delCon } from '../../redux/contactsSlice.js';
-import { setFilter } from 'redux/filterSlice';
+// import { setFilter } from 'redux/filterSlice';
 // import { getFilter } from 'redux/contactsSlice.js';
 // import { Toaster } from 'react-hot-toast';
 import { selectIsLoading, refreshCurrentUser } from 'redux/auth';
 
 import { Shared, Register, Login, Private, Public } from 'components';
 import { Home, Contacts } from 'pages';
-import { LocalHospital } from '@mui/icons-material';
+// import { LocalHospital } from '@mui/icons-material';
 
 export const App = () => {
   const dispatch = useDispatch();

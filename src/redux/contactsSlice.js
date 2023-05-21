@@ -6,12 +6,12 @@ import {
   updateContact,
 } from 'redux/operations';
 
-function isPendingAction(action) {
-  return action.type.endsWith('pending');
-}
-function isRejectedAction(action) {
-  return action.type.endsWith('rejected');
-}
+// function isPendingAction(action) {
+//   return action.type.endsWith('pending');
+// }
+// function isRejectedAction(action) {
+//   return action.type.endsWith('rejected');
+// }
 
 const contactsSlice = createSlice({
   name: 'contacts',
