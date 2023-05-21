@@ -4,9 +4,7 @@ import { useDispatch } from 'react-redux';
 import { login } from 'redux/auth';
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
-import OutlinedInput from '@mui/material/OutlinedInput';
+
 import Button from '@mui/material/Button';
 
 export default function LoginForm() {

@@ -4,13 +4,7 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth';
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import IconButton from '@mui/material/IconButton';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
+
 import Button from '@mui/material/Button';
 
 export default function RegisterForm() {
