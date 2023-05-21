@@ -6,11 +6,7 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import IconButton from '@mui/material/IconButton';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 
 export default function LoginForm() {
@@ -34,20 +30,10 @@ export default function LoginForm() {
     setEmail('');
     setPassword('');
   };
-  const [showPassword, setShowPassword] = React.useState(false);
 
-  const handleClickShowPassword = () => setShowPassword(show => !show);
-
-  const handleMouseDownPassword = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
-    event.preventDefault();
-  };
   return (
     <form className="" action="" onSubmit={onFormSubmit}>
       <TextField
-        fullWidth
-        label="Email"
         id="email"
         name="email"
         value={email}
@@ -55,30 +41,15 @@ export default function LoginForm() {
         placeholder="Enter your email..."
         required
       />
-      <FormControl fullWidth required variant="outlined">
-        <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-        <OutlinedInput
-          id="outlined-adornment-password"
-          type={showPassword ? 'text' : 'password'}
-          endAdornment={
-            <InputAdornment position="end">
-              <IconButton
-                aria-label="toggle password visibility"
-                onClick={handleClickShowPassword}
-                onMouseDown={handleMouseDownPassword}
-                edge="end"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          }
-          label="Password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-          placeholder="Enter your password..."
-        />
-      </FormControl>
+      <TextField
+        id="email"
+        name="password"
+        type="password"
+        value={password}
+        onChange={handleChange}
+        placeholder="Enter your pass..."
+        required
+      />
       <Button variant="outlined" type="submit">
         Login
       </Button>
