@@ -31,26 +31,28 @@ export default function LoginForm() {
 
   return (
     <form className="" action="" onSubmit={onFormSubmit}>
-      <TextField
-        id="email"
-        name="email"
-        value={email}
-        onChange={handleChange}
-        placeholder="Enter your email..."
-        required
-      />
-      <TextField
-        id="email"
-        name="password"
-        type="password"
-        value={password}
-        onChange={handleChange}
-        placeholder="Enter your pass..."
-        required
-      />
-      <Button variant="outlined" type="submit">
-        Login
-      </Button>
+      <div className="login-items">
+        <TextField
+          id="email"
+          name="email"
+          value={email}
+          onChange={handleChange}
+          placeholder="Enter your email..."
+          required
+        />
+        <TextField
+          id="email"
+          name="password"
+          type="password"
+          value={password}
+          onChange={handleChange}
+          placeholder="Enter your pass..."
+          required
+        />
+        <Button variant="outlined" type="submit">
+          Login
+        </Button>
+      </div>
     </form>
   );
 }

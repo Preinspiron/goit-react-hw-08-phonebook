@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 export default function AuthNav() {
   return (
-    <div>
+    <div className="autn-links">
       <NavLink className="auth-nav" to="/register">
         <Button variant="outlined">Register</Button>
       </NavLink>

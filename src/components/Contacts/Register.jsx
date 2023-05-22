@@ -34,34 +34,36 @@ export default function RegisterForm() {
   };
   return (
     <form className="" action="" onSubmit={onFormSubmit}>
-      <TextField
-        id="name"
-        name="name"
-        value={name}
-        onChange={handleChange}
-        placeholder="Enter your name..."
-        required
-      />
-      <TextField
-        id="email"
-        name="email"
-        value={email}
-        onChange={handleChange}
-        placeholder="Enter your email..."
-        required
-      />
-      <TextField
-        id="email"
-        type="password"
-        name="password"
-        value={password}
-        onChange={handleChange}
-        placeholder="Enter your pass..."
-        required
-      />
-      <Button variant="outlined" type="submit">
-        Register
-      </Button>
+      <div className="register-items">
+        <TextField
+          id="name"
+          name="name"
+          value={name}
+          onChange={handleChange}
+          placeholder="Enter your name..."
+          required
+        />
+        <TextField
+          id="email"
+          name="email"
+          value={email}
+          onChange={handleChange}
+          placeholder="Enter your email..."
+          required
+        />
+        <TextField
+          id="email"
+          type="password"
+          name="password"
+          value={password}
+          onChange={handleChange}
+          placeholder="Enter your pass..."
+          required
+        />
+        <Button variant="outlined" type="submit">
+          Register
+        </Button>
+      </div>
     </form>
   );
 }
