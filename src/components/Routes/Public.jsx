@@ -12,5 +12,5 @@ export default function Public({ children, restricted = false }) {
 
 Public.propTypes = {
   restricted: PropTypes.bool,
-  children: PropTypes.array,
+  children: PropTypes.object,
 };
