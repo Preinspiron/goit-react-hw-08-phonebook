@@ -136,3 +136,4 @@ export const refreshCurrentUser = createAsyncThunk(
 export const selectUserName = state => state.auth.user.name;
 export const selectIsLogin = state => state.auth.isLogin;
 export const selectIsLoading = state => state.auth.isCurrentLoading;
+export const selectToken = state => state.auth.token;

@@ -3,6 +3,8 @@ import { contactsReducer } from './contactsSlice';
 import { filterReducer } from './filterSlice';
 import { persistStore } from 'redux-persist';
 import { authReducer } from './auth';
+import { contactsApi } from './contactsApi';
+
 // import storage from 'redux-persist/lib/storage';
 
 // import { combineReducers } from 'redux-persist';
@@ -39,12 +41,13 @@ export const store = configureStore({
     contacts: contactsReducer,
     filter: filterReducer,
     auth: authReducer,
+    [contactsApi.reducerPath]: contactsApi.reducer,
   },
   devTools: true,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }),
+    }).concat(contactsApi.middleware),
 });
 
 export const persistor = persistStore(store);
