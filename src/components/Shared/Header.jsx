@@ -5,7 +5,7 @@ import UserMenu from './Nav/UserMenu';
 // import { black } from '@mui/material/colors';
 import SvgIcon from '@mui/material/SvgIcon';
 import Auth from './Nav/Auth';
-import { selectIsLogin } from 'redux/auth';
+import { selectIsLogin } from 'redux/auth/auth';
 import { MdOutlineImportContacts } from 'react-icons/md';
 function HomeIcon(props) {
   return (

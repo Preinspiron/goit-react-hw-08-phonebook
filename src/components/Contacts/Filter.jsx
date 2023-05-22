@@ -1,6 +1,6 @@
 // import s from './Filter.module.css';
 import { useDispatch } from 'react-redux';
-import { setFilter } from 'redux/filterSlice';
+import { setFilter } from 'redux/filter/filterSlice';
 import TextField from '@mui/material/TextField';
 
 export default function Filter() {

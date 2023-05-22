@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectUserName } from 'redux/auth';
-import { logout } from 'redux/auth';
+import { selectUserName } from 'redux/auth/auth';
+import { logout } from 'redux/auth/auth';
 import Button from '@mui/material/Button';
 export default function UserMenu() {
   const name = useSelector(selectUserName);

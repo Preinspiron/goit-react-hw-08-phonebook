@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { selectIsLogin } from 'redux/auth';
+import { selectIsLogin } from 'redux/auth/auth';
 
 export default function Public({ children, restricted = false }) {
   const isLogin = useSelector(selectIsLogin);

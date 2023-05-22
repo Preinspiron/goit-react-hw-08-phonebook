@@ -4,8 +4,8 @@ import { selectIsLoading, selectError } from 'redux/selectors';
 import { fetchContacts } from 'redux/operations';
 import { useSelector, useDispatch } from 'react-redux';
 // import { contactsApi } from 'redux/contactsApi';
-import { useGetAllQuery } from 'redux/contactsApi';
-import { selectToken } from 'redux/auth';
+import { useGetAllQuery } from 'redux/contacts/contactsApi';
+import { selectToken } from 'redux/auth/auth';
 
 export default function ContactsView() {
   const dispatch = useDispatch();

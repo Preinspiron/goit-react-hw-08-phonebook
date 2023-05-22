@@ -1,7 +1,7 @@
 // import s from '../ContactForm/ContactForm.module.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from 'redux/auth';
+import { login } from 'redux/auth/auth';
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
 

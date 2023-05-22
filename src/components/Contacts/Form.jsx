@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/contactsSlice';
+import { selectContacts } from 'redux/contacts/contactsSlice';
 import { addContact } from 'redux/operations';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';

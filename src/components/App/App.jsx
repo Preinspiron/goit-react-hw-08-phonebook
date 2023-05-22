@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 // import { setFilter } from 'redux/filterSlice';
 // import { getFilter } from 'redux/contactsSlice.js';
 // import { Toaster } from 'react-hot-toast';
-import { selectIsLoading, refreshCurrentUser } from 'redux/auth';
+import { selectIsLoading, refreshCurrentUser } from 'redux/auth/auth';
 
 import { Shared, Register, Login, Private, Public } from 'components';
 import { Home, Contacts } from 'pages';
