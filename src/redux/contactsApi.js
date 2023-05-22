@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { useSelector } from 'react-redux';
-import { selectToken } from 'redux/auth';
+// import { useSelector } from 'react-redux';
+// import { selectToken } from 'redux/auth';
 
 const baseQuery = fetchBaseQuery({
   baseUrl: 'https://connections-api.herokuapp.com',
